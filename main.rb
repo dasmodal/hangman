@@ -8,9 +8,9 @@ game = Game.new(word)
 console_interface = ConsoleInterface.new(game)
 
 until game.over?
-  console_interface.print_out
+  puts console_interface.print_out
   letter = console_interface.get_letter
   game.play!(letter)
 end
 
-console_interface.print_out
+puts console_interface.print_out

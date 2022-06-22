@@ -29,15 +29,13 @@ class ConsoleInterface
   def print_out
     clear_console
 
-    puts <<~GAME_STATUS
+    <<~GAME_STATUS
       Слово: #{word_to_show}
       #{figure}
       Ошибки (#{@game.errors_made}): #{error_letters_to_show}
       У вас осталось ошибок: #{@game.errors_allowed}
 
     GAME_STATUS
-
-    result
   end
 
   def read_figures
@@ -47,9 +45,9 @@ class ConsoleInterface
 
   def result
     if @game.won?
-      puts 'Поздравляем, вы выиграли!'
+      'Поздравляем, вы выиграли!'
     elsif @game.lost?
-      puts "Вы проиграли, загаданное слово: #{@game.word}"
+      "Вы проиграли, загаданное слово: #{@game.word}"
     end
   end
 
