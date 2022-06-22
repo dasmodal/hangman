@@ -1,4 +1,4 @@
-# some documentation
+# output game interface to the console
 class ConsoleInterface
   FIGURES =
     Dir["#{__dir__}/../data/figures/*.txt"]

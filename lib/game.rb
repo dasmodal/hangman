@@ -1,4 +1,4 @@
-# some documentation
+# The hangman game logic
 class Game
   TOTAL_ERRORS_ALLOWED = 7
 
