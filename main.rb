@@ -12,7 +12,7 @@ until game.over?
 
   print 'Введите следующую букву: '
   letter = gets[0].upcase
-  
+
   game.play!(letter)
 end
 

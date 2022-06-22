@@ -30,6 +30,7 @@ class ConsoleInterface
       Ошибки (#{@game.errors_made}): #{error_letters_to_show}
       У вас осталось ошибок: #{@game.errors_allowed}
 
+      #{result}
     GAME_STATUS
   end
 
