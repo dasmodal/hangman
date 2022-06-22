@@ -9,7 +9,10 @@ console_interface = ConsoleInterface.new(game)
 
 until game.over?
   puts console_interface.print_out
-  letter = console_interface.get_letter
+
+  print 'Введите следующую букву: '
+  letter = gets[0].upcase
+  
   game.play!(letter)
 end
 

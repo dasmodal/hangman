@@ -21,11 +21,6 @@ class ConsoleInterface
     FIGURES[@game.errors_made]
   end
 
-  def get_letter
-    print 'Введите следующую букву: '
-    gets[0].upcase
-  end
-
   def print_out
     clear_console
 
