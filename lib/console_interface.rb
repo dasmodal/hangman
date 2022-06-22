@@ -34,11 +34,6 @@ class ConsoleInterface
     GAME_STATUS
   end
 
-  def read_figures
-    file_names = Dir[File.join(__dir__, 'data', 'figures', '*.txt')].sort
-    file_names.map { |file_name| File.read(file_name) }
-  end
-
   def result
     if @game.won?
       'Поздравляем, вы выиграли!'
