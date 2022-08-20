@@ -24,12 +24,15 @@ class ConsoleInterface
   def print_out
     clear_console
 
-    <<~GAME_STATUS
-      Слово: #{word_to_show}
-      #{figure}
-      Ошибки (#{@game.errors_made}): #{error_letters_to_show}
-      У вас осталось ошибок: #{@game.errors_allowed}
+    word = "Слово: #{word_to_show}"
+    mistakes = "Ошибки (#{@game.errors_made}): #{error_letters_to_show}"
 
+    <<~GAME_STATUS
+      #{word.colorize(:light_blue)}
+      #{figure.colorize(:yellow)}
+
+      #{mistakes.colorize(:red)}
+      У вас осталось ошибок: #{@game.errors_allowed}
       #{result}
     GAME_STATUS
   end

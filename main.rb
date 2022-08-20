@@ -1,5 +1,6 @@
 require_relative 'lib/console_interface'
 require_relative 'lib/game'
+require 'colorize'
 
 path = File.join(__dir__, 'data', 'words.txt')
 word = File.readlines(path, chomp: true).sample
