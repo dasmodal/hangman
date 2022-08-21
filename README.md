@@ -28,7 +28,7 @@ bundle install
 
 4. Осталось только запустить игру:
 ```
-ruby main.rb
+bundle exec ruby main.rb
 ```
 
 ### Добавление новых слов
